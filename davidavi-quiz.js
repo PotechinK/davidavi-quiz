@@ -36,7 +36,7 @@ const questions = [
   },
   
   {
-    question: 'ダビダビは、何を感じながらプログラミングを学んでほしいと　　　言っていた？',
+    question: 'ダビダビは、何を感じながらプログラミングを学んでほしい<br>と言っていた？',
     correct: '楽しさ',
     incorrect: '苦しみ'
   },
@@ -56,23 +56,23 @@ const questions = [
   {
     question: 'ダビダビのおばあちゃん家があるのは？',
     correct: 'ヴェネツィア',
-    incorrect: '　東京ディズニーシーの　　　メディテレーニアンハーバー'
+    incorrect: '東京ディズニーシーの<br>メディテレーニアンハーバー'
   },
 
   {
     question: 'ダビダビが言ったのは？',
-    correct: '大ヒットアプリを開発して　一発当てましょう！',
-    incorrect: '　ジャンボ宝くじを買って　　一発当てましょう！'
+    correct: '大ヒットアプリを開発して<br>一発当てましょう！',
+    incorrect: 'ジャンボ宝くじを買って<br>一発当てましょう！'
   },
   
   {
     question: 'プログラミングは？',
-    correct: '　頭の中で考えるだけより　実際に書いて動かしてみる',
-    incorrect: '　頭の中で考えるだけで　　　やった気になれる'
+    correct: '頭の中で考えるだけより<br>実際に書いて動かしてみる',
+    incorrect: '頭の中で考えるだけで<br>やった気になれる'
   },
 
   {
-    question: 'ダビダビの格言「夏休みに利確しハロウィンまでに戻って来い」は　何について言っている？',
+    question: '「夏休みに利確しハロウィンまでに戻って来い」<br>というダビダビの格言は何について言っている？',
     correct: 'S&P500',
     incorrect: 'オルカン'
   },
@@ -80,7 +80,7 @@ const questions = [
   {
     question: 'ダビダビはレポートを書くと？',
     correct: '「ちゃんと書けて偉いです✨」と褒めてくれる',
-    incorrect: '「ベホマズン✨」と疲れを　回復してくれる'
+    incorrect: '「ベホマズン✨」<br>と疲れを回復してくれる'
   },
 
   {
@@ -91,8 +91,8 @@ const questions = [
 
   {
     question: 'Multipassというのは？',
-    correct: '仮想マシンを作成・管理するためのソフトウェア ',
-    incorrect: '手っ取り早く大金を稼ぐためのマルチ商法'
+    correct: '仮想マシンを作成・管理する<br>ためのソフトウェア ',
+    incorrect: '手っ取り早く大金を稼ぐ<br>ためのマルチ商法'
   },
  
   {
@@ -329,7 +329,7 @@ function showQuestion() {
 
   /* 問題文 */
 
-  questionText.textContent =
+  questionText.innerHTML =
     currentQuestion.question;
 
   /* 正解と不正解をランダムに並べる */
@@ -349,7 +349,7 @@ function showQuestion() {
 
   /* A */
 
-  answerA.textContent =
+  answerA.innerHTML =
     answers[0].text;
 
     answerA.dataset.correct =
@@ -357,7 +357,7 @@ function showQuestion() {
 
   /* B */
 
-  answerB.textContent =
+  answerB.innerHTML =
     answers[1].text;
 
   answerB.dataset.correct =
