@@ -105,15 +105,15 @@ body {
   width: 20%;
   height: 15%;
   left: 40%;
-  top: 80%;
+  top: 75%;
 }
 
 /* 結果を見る */
 
 #result-button {
-  width: 25%;
+  width: 15%;
   height: 25%;
-  left: 70%;
+  left: 65%;
   top: 45%;
 }
 
@@ -129,7 +129,7 @@ body {
 /* もう一度 */
 
 #again-button {
-  width: 30%;
+  width: 25%;
   height: 20%;
   left: 15%;
   top: 40%;
@@ -138,7 +138,7 @@ body {
 /* 終了 */
 
 #end-button {
-  width: 30%;
+  width: 25%;
   height: 20%;
   left: 60%;
   top: 40%;
